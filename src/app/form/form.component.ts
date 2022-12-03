@@ -10,7 +10,7 @@ import { MessagesService } from 'src/app/services/messages/messages.service'
 export class FormComponent implements OnInit {
 
   constructor(
-    public messagesService: MessagesService, 
+    public messagesService: MessagesService,
     public fb: FormBuilder
     ) { }
 
@@ -33,11 +33,11 @@ export class FormComponent implements OnInit {
   }
 
   submit(): void {
-    /*this.messagesService.saveMessage(this.daForm.value).subscribe(resp => {
+    this.messagesService.saveMessage(this.daForm.value).subscribe(resp => {
       this.daForm.reset();
     },
       error => { console.log(error) }
-    )*/
+    )
   }
 
 }
